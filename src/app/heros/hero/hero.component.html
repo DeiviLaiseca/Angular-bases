@@ -1,0 +1,14 @@
+<dl>
+    <td>Nombre</td>
+    <dd>{{ name1 }}</dd>
+    <td>Edad</td>
+    <dd>{{ age1 }}</dd>
+    <td>Metodo</td>
+    <dd>{{ concatenate() }}</dd>
+    <td>Capitalizado</td>
+    <dd>{{ nameCapitalizate }}</dd>
+</dl>
+
+<button class="btn btn-outline-primary" (click)="changeName()">Cambiar nombre</button>
+<button class="btn btn-outline-primary" (click)="changeAge()">Cambiar edad</button>
+<button class="btn btn-outline-info" (click)="reset()">reset</button>
