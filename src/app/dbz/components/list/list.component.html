@@ -1,0 +1,11 @@
+<h4>Listado</h4>
+<ol class="list-group">
+    <li *ngFor="let character of characterList; let i = index; let isEven = even" class="list-group-item list-group-item-info d-flex justify-content-between align-items-center" [ngClass]="{'list-group-item-info': isEven}">
+        <div>
+            <span class="text-primary">{{ i + 1 }} </span>
+            <strong>{{ character.name }}</strong>
+            <span> Power: </span>{{ character.power }}
+        </div>
+        <button class="btn btn-outline-danger btn-sm" (click)="deleteCharacterIndex( character.id )">X</button>
+    </li>
+</ol>
